@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    /* background: rgb(39, 37, 37); */
+    /* text-align: right; */
+}
+
+.main-container {
+  background-image: url(images/Voras-Mountains-sunset-over-vergoritida-lake-view-mountain-1285181797.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.main-weather-card {
+  border: 1px solid black;
+  padding: 20px 30px;
+  backdrop-filter: blur(5px);
+  box-shadow: 2px 2px 5px hsl(0, 0%, 50%);
+  border-radius: 10px;
+}
+
+.cityInput {
+  padding: 10px;
+  width: 300px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 2px solid hsl(0, 0%, 30%);
+  outline: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+button[type="submit"]{
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: hsl(122, 39%, 50%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button[type="submit"]:hover{
+  background-color: hsl(122, 39%, 40%);
+}
+
+button[type="submit"]:active{
+  background-color: hsl(122, 39%, 30%);
+}
+
+.display-part {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+
+
+p{
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay {
+  font-size: 3rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.75);
+  margin-bottom: 25px;
+}
+
+.humidityDisplay {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.descDisplay {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.weatherEmoji {
+  margin: 0;
+  font-size: 5rem;
+}
+
+.errorDisplay {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.705);
+}
